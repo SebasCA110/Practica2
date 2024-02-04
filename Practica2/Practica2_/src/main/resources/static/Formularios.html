@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+Author: Sebastian Castro Alfaro
+Creation Date: 15/01/24
+Last Modified: 15/01/24
+
+Comments;
+La primer pagina del proyecto
+-->
+<html>
+    <head>
+        <title>K'alzado</title>
+        <meta charset="UTF-8">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <h1><a href="index.html" class="nav-link logo">K'alzado</a></h1>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a href="Promocion.html" class="nav-link nav-menu-link">&triangleleft;</a></li>
+                    <li class="nav-menu-item"><a href="Contacto.html" class="nav-link nav-menu-link">&triangleright;</a></li>
+                    <li class="nav-menu-item"><a href="audios.html" class="nav-link nav-menu-link">Audios</a></li>
+                    <li class="nav-menu-item"><a href="Promocion.html" class="nav-link nav-menu-link">Promocion</a></li>
+                    <li class="nav-menu-item"><a href="Contacto.html" class="nav-link nav-menu-link">Contacto</a></li>
+                    <li class="nav-menu-item"><a href="Formularios.html" class="nav-link nav-menu-link">Registro</a></li>
+                </ul> 
+            </nav>  
+        </header>
+        <aside>
+            <h2 class="Noticia">Uso de Audios</h2>
+            <p>Uso de etiquetas para audios</p>
+        </aside>
+        <section>
+            <article>
+                <h3>Rgistro de Usuarios</h3>
+                <form action="/usuario/registro" method="POST">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Usuario:</td>
+                                <td><input type="text" name="username" value="" size="15" required /></td>    
+                            </tr>
+                            <tr>
+                                <td>Contrasena :</td>
+                                <td><input type="password" name="password" value="" size="10"/></td>    
+                            </tr>
+                            <tr>
+                                <td>Nombre: </td>
+                                <td><input type="text" name="nombre" value="" size="35" /></td>    
+                            </tr>
+                            <tr>
+                                <td>Correo: </td>
+                                <td><input type="email" name="correo" placeholder="correo@correo.com" size="35" /></td>    
+                            </tr>
+                            <!--
+                            <tr>
+                                <td>Edad: </td>
+                                <td><input type="number" name="edad" value="" min="18" max="100" /></td>   
+                            </tr>
+                            -->
+                            <tr>
+                                <td>Fecha entrega aproximada: </td>
+                                <td><input type="date" name="fActivo" value="" /></td>   
+                            </tr>
+                            <tr>
+                                <td>Comprobante: </td>
+                                <td><input type="file" name="foto" accept="image/*"/></td>   
+                            </tr>
+                            <tr>
+                                <td>Pago: <select name="Nivel">
+                                        <option value="0">Contado</option>
+                                        <option value="1"> Credito</option>
+                                        <option value="2">Tasa 0</option> </td>
+                        <br/>
+
+                        </tr>
+                        <tr>
+                            <td>Zona: Dentro de la GAM <input type="radio" name="zona" value="1" /> Fuera de la GAM <input type="radio" name="zona" value="2" /></td>
+                        </tr>  
+                        </tbody>
+
+                    </table>
+
+
+
+                    Declaro que esta informacion es veras <input type="checkbox" name="jura" required /><br/>
+                    <input type="submit" value="Registro" name="btnRegistro" />
+                </form>
+            </article>
+
+            <br>
+            <br>
+            <p>Registro Completo</p>
+            <aside>
+                <h2>Modulo de registro</h2>
+
+            </aside>
+        </section>
+    </body>
+</html>
